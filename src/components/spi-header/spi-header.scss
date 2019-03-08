@@ -1,0 +1,41 @@
+
+$customcolor:#209cee;
+$navbar-background-color: $customcolor;
+
+@import "../../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../../node_modules/bulma/sass/elements/button.sass";
+
+/*.navbar {
+    background-color: red;
+}
+.navbar-menu {
+    background-color: $purple;
+}*/
+
+.navbar-brand .navbar-itemm {
+    font-size: 2.8em;
+    font-family: "Brush Script MT", cursive;
+ 
+    
+}
+strong {
+    color: #fffdfd;
+    font-weight: 700;
+}
+
+.navbar-menu .navbar-item {
+    font-size: 2em;
+    font-family: "Brush Script MT", cursive;
+}
+
+.navbar-menu .navbar-item svg  {
+    margin-right: .25em;
+    margin-left: 1em;
+}
+
+.navbar a {
+    color: #ffffff; /* blue colors for links too */
+  }
+.navbar a:hover {
+    color:  #ece7e7;
+}
