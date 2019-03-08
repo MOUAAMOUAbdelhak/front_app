@@ -14,6 +14,7 @@ export class SpiRoot {
         <main class="container">
           <stencil-router>
             <stencil-route-switch scrollTopOffset={0}>
+            <stencil-route url="/" component="spi-enseignant" exact={true}/>
               <stencil-route url="/formation" component="spi-home" exact={true} />
               <stencil-route url="/candidat" component="spi-candidat" exact={true} />
               <stencil-route url="/enseignant" component="spi-enseignant" exact={true} />
