@@ -64,17 +64,6 @@ export namespace Components {
     'match'?: MatchResults;
   }
 
-  interface XModal {
-    'title': string;
-    'visible': boolean;
-  }
-  interface XModalAttributes extends StencilHTMLAttributes {
-    'onCancel'?: (event: CustomEvent) => void;
-    'onOk'?: (event: CustomEvent) => void;
-    'title'?: string;
-    'visible'?: boolean;
-  }
-
   interface SpiHeader {}
   interface SpiHeaderAttributes extends StencilHTMLAttributes {}
 
@@ -94,7 +83,6 @@ declare global {
     'SpiAllens': Components.SpiAllens;
     'SpiEnseignant': Components.SpiEnseignant;
     'SupprimerEnseignant': Components.SupprimerEnseignant;
-    'XModal': Components.XModal;
     'SpiHeader': Components.SpiHeader;
     'SpiHome': Components.SpiHome;
     'SpiRoot': Components.SpiRoot;
@@ -108,7 +96,6 @@ declare global {
     'spi-allens': Components.SpiAllensAttributes;
     'spi-enseignant': Components.SpiEnseignantAttributes;
     'supprimer-enseignant': Components.SupprimerEnseignantAttributes;
-    'x-modal': Components.XModalAttributes;
     'spi-header': Components.SpiHeaderAttributes;
     'spi-home': Components.SpiHomeAttributes;
     'spi-root': Components.SpiRootAttributes;
@@ -157,12 +144,6 @@ declare global {
     new (): HTMLSupprimerEnseignantElement;
   };
 
-  interface HTMLXModalElement extends Components.XModal, HTMLStencilElement {}
-  var HTMLXModalElement: {
-    prototype: HTMLXModalElement;
-    new (): HTMLXModalElement;
-  };
-
   interface HTMLSpiHeaderElement extends Components.SpiHeader, HTMLStencilElement {}
   var HTMLSpiHeaderElement: {
     prototype: HTMLSpiHeaderElement;
@@ -189,7 +170,6 @@ declare global {
     'spi-allens': HTMLSpiAllensElement
     'spi-enseignant': HTMLSpiEnseignantElement
     'supprimer-enseignant': HTMLSupprimerEnseignantElement
-    'x-modal': HTMLXModalElement
     'spi-header': HTMLSpiHeaderElement
     'spi-home': HTMLSpiHomeElement
     'spi-root': HTMLSpiRootElement
@@ -203,7 +183,6 @@ declare global {
     'spi-allens': HTMLSpiAllensElement;
     'spi-enseignant': HTMLSpiEnseignantElement;
     'supprimer-enseignant': HTMLSupprimerEnseignantElement;
-    'x-modal': HTMLXModalElement;
     'spi-header': HTMLSpiHeaderElement;
     'spi-home': HTMLSpiHomeElement;
     'spi-root': HTMLSpiRootElement;
