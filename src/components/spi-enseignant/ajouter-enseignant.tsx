@@ -63,7 +63,7 @@ export class AjouterEnseignant {
    
     
 
-    fetch("http://api-dosispi.cleverapps.io/enseignants", {
+    fetch("https://api-dosispi.cleverapps.io/enseignants", {
       method: "POST",
       headers: {
         Accept: "application/json, text/plain, /",
