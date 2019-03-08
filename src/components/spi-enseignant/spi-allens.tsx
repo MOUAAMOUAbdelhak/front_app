@@ -25,7 +25,7 @@ export class spi {
     @Prop()
     name: string = '/fetch/';
 
-    apiRootUrl: string = 'http://api-dosispi.cleverapps.io/enseignants';
+    apiRootUrl: string = 'https://api-dosispi.cleverapps.io/enseignants';
 
     @Method()
     load() {
@@ -58,7 +58,7 @@ export class spi {
         let t1 = document.getElementById("myModal");
         t1.classList.toggle("is-active");
         console.log(num);
-        let url = 'http://api-dosispi.cleverapps.io/enseignants/'
+        let url = 'https://api-dosispi.cleverapps.io/enseignants/'
         return fetch(url + num)
             .then(response => response.json())
             .then(data => {
@@ -79,7 +79,7 @@ export class spi {
         console.log(enseignant);
         let t1 = document.getElementById("modeledelete");
         t1.classList.toggle("is-active");
-        fetch("http://api-dosispi.cleverapps.io/enseignants", {
+        fetch("https://api-dosispi.cleverapps.io/enseignants", {
             method: "DELETE",
             body: JSON.stringify(enseignant),
             headers: {
@@ -104,8 +104,8 @@ export class spi {
         }
         else {
             //console.log(input);
-            let url = 'http://api-dosispi.cleverapps.io/enseignants/nom/' + input
-            let url1 = 'http://api-dosispi.cleverapps.io/enseignants/emailUbo/' + input
+            let url = 'https://api-dosispi.cleverapps.io/enseignants/nom/' + input
+            let url1 = 'https://api-dosispi.cleverapps.io/enseignants/emailUbo/' + input
 
             console.log(url1)
             console.log(url)
